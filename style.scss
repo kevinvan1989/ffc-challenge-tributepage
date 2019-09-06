@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Chilanka&display=swap');
+
+$yellow: #FED90F;
+
+body{
+  line-height: 1.5;
+  text-align: center;
+}
+
+img{
+  max-width: 100%;
+}
+
+h1, h2, h3, p.subtitle{
+  font-family: Chilanka;
+  font-variant: small-caps;
+}
+
+h1{
+  font-size: 2.3rem;
+}
+
+h2{
+  font-size: 1.9rem;
+}
+
+h3{
+  font-size: 1.6rem;
+}
+
+.u-fl-1{
+    flex: 1;
+  }
+  
+.u-fl-2{
+    flex: 2;
+  }
+
+header{
+  display: flex;
+  
+  .hero__txt{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    background: $yellow;
+    color: #424F46;
+  }
+  
+  img{
+    display: block;
+  }
+  
+  .hero__img{
+    position: relative;
+    
+    figcaption{
+      position: absolute;
+      right: 20px;
+      bottom: 5px;
+      color: #fff;
+      
+      a{
+        color: inherit;
+        text-decoration-color: $yellow;
+      }
+    }
+  }
+}
+
+main{
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  padding: 2rem 0;
+  
+  .main__content{
+    text-align: center;
+    padding: 0 4rem;
+  }
+  
+  .main__aside{
+    text-align: right;
+    span{
+      display: inline-block;
+      font-weight: bold;
+      text-align: left;
+    }
+    
+    li{
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+    }
+  }
+}
